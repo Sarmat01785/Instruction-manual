@@ -1,13 +1,14 @@
 ## Инструкция по установке шрифта `Fira Code Medium Nerd Font Complete` на операционную систему `ALT Workstation K 10.4` и настройка шрифта в `Konsole` по умолчанию.
 
 1. Скачайте шрифт:
-   - Скачайте файл Fira Code Medium Nerd Font Complete.ttf с помощью этой ссылки (https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip).
+   - Скачайте файл Fira Code Medium Nerd Font Complete.ttf с помощью этой ссылки [FiraCode](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip).
 
 2. Разархивируйте файл:
+   - Перейдите в директорию куда скачали `FiraCode`
    - Разархивируйте скачанный архив `FiraCode.zip` с помощью команды:
 
 ```bash
-unzip /home/executor/Загрузки/FiraCode.zip/FiraCode.zip
+unzip FiraCode.zip
 ```
 
 3. Копирование шрифта:
