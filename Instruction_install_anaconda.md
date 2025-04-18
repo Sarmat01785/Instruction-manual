@@ -1,7 +1,7 @@
 # Установка Anaconda на ALT Workstation K 10.4
 
 ## Шаг 1: Загрузка установочного файла
-Перейдите в нужную директорию (Обычно это домашняя директория /home/yourusername/) и загрузите установочный файл с помощью команды `wget`:
+Перейдите в нужную директорию (Обычно это домашняя директория /home/yourusername/) и загрузите установочный файл с помощью команды `wget` [Download Anaconda](https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh):
 
 ```bash
 wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
@@ -12,7 +12,7 @@ wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
 Сделайте скрипт установки исполняемым с помощью команды `chmod`:
 
 ```bash
-chmod +x Anaconda3-2024.10-1-Linux-x8664.sh
+chmod +x Anaconda3-2024.10-1-Linux-x86_64.sh
 ```
 
 ## Шаг 3: Запуск установки
@@ -20,7 +20,7 @@ chmod +x Anaconda3-2024.10-1-Linux-x8664.sh
 Запустите скрипт установки с помощью следующей команды:
 
 ```bash
-./Anaconda3-2024.10-1-Linux-x8664.sh
+./Anaconda3-2024.10-1-Linux-x86_64.sh
 ```
 
 ## Шаг 4: Принятие лицензионного соглашения
