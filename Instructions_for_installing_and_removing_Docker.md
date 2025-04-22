@@ -10,7 +10,7 @@ sudo apt-get update && sudo apt-get install docker-engine
 docker --version
 ```
 
-### Установка `Docker Compose`
+### Установка `Docker Compose` Вариант 1
 
 ```bash
 sudo pip3 install docker-compose
@@ -102,3 +102,101 @@ sudo rm /usr/local/bin/docker-compose
 sudo rm /usr/bin/docker
 ```
 P.S. После выполнения всех указанных выше шагов Docker должен быть успешно удален с вашей операционной системы.
+
+
+### Установка `Docker Compose` Вариант 2
+
+#### Установка `Docker Compose` на `ALT Workstation K 10.4`
+
+1. Убедитесь, что у вас установлен `Python` и `pip`. Вы можете проверить их наличие, выполнив следующие команды:
+
+```bash
+python --version
+```
+
+```bash
+pip --version
+```
+
+2. Установите `Docker Compose`, выполнив следующие команды:
+
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+```bash
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+3. Проверьте, был ли `Docker Compose` успешно установлена, выполнив:
+
+```bash
+docker-compose --version
+```
+
+4. Убедитесь, что сервис `Docker` запущен:
+
+```bash
+sudo service docker status
+```
+
+5. Если сервис `Docker` не запущен, запустите его:
+
+```bash
+sudo service docker start
+```
+
+6. Проверьте статус сервиса `Docker`:
+
+```bash
+sudo service docker status
+```
+
+7. Добавьте вашего пользователя в группу docker для выполнения Docker команд без `sudo`:
+
+```bash
+sudo usermod -aG docker $USER
+```
+8. Перезапустите вашу сессию для применения изменений.
+
+9. Проверьте, что ваш пользователь добавлен в группу `docker`:
+
+```bash
+groups
+```
+
+10. Включите автозапуск службы `Docker` при загрузке системы:
+
+```bash
+sudo systemctl enable docker
+```
+
+11. Теперь `Docker` должен быть готов к использованию. Попробуйте выполнить команду `docker run hello-world`, чтобы убедиться, что `Docker` работает корректно.
+
+### Удаление `Docker Compose` на `ALT Workstation K 10.4` Вариант 2
+
+1. Если у вас установлен Docker Compose, вы можете удалить его, выполнив следующие команды:
+
+```bash
+sudo rm /usr/local/bin/docker-compose
+```
+
+2. Также рекомендуется удалить симлинк на версию `Docker Compose`, если он был создан:
+
+```bash
+sudo rm /usr/local/bin/docker-compose-1.29.2
+```
+
+3. Убедитесь, что `Docker Compose` успешно удален, выполнив:
+
+```bash
+docker-compose --version
+```
+
+   Если после удаления вы видите сообщение об ошибке, это означает, что `Docker Compose` был успешно удален.
+
+4. Опционально, вы также можете удалить настройки и файлы `Docker Compose`, если они больше не нужны.
+
+5. После удаления `Docker Compose`, рекомендуется перезапустить систему или завершить текущую сессию для полного завершения удаления.
+
+6. Теперь `Docker Compose` должен быть удален с вашей системы.
