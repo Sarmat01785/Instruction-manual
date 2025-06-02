@@ -1,4 +1,4 @@
-## Инструкция по установке шрифта `Fira Code Medium Nerd Font Complete` на операционную систему `ALT Workstation K 10.4` и настройка шрифта в `Konsole` по умолчанию.
+## Инструкция по установке шрифта `Fira Code Medium Nerd Font Complete` на операционную систему `ALT Workstation K 11.1` и настройка шрифта в `Konsole` по умолчанию.
 
 1. Скачайте шрифт:
    - Скачайте файл Fira Code Medium Nerd Font Complete.ttf с помощью этой ссылки [FiraCode](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip).
@@ -28,17 +28,17 @@ fc-cache -f -v
    - Измените шрифт в конфигурации Konsole на Fira Code Medium Nerd Font Complete с помощью следующих команд:
 
 ```bash
-kwriteconfig5 --file konsolerc --group 'General' --key 'font' 'Fira Code Medium Nerd Font Complete,12,-1,5,50,0,0,0,0,0'
+kwriteconfig6 --file konsolerc --group 'General' --key 'font' 'Fira Code Medium Nerd Font Complete,12,-1,5,50,0,0,0,0,0'
 ```
 6. Проверка установленного шрифта:
       
    - Для проверки установленного шрифта выполните команду:
 
 ```bash
-kreadconfig5 --file konsolerc --group 'General' --key 'font'
+kreadconfig6 --file konsolerc --group 'General' --key 'font'
 ```
 
 7. Завершение:
-   - После выполнения этих шагов, шрифт Fira Code Medium Nerd Font Complete успешно установлен в вашу операционную систему ALT Workstation K 10.4 и должен быть доступен для использования.
+   - После выполнения этих шагов, шрифт Fira Code Medium Nerd Font Complete успешно установлен в вашу операционную систему ALT Workstation K 11.1 и должен быть доступен для использования.
 
 Эта инструкция поможет вам установить и настроить шрифт Fira Code Medium Nerd Font Complete в вашей операционной системе. 
