@@ -1,4 +1,4 @@
-# Установка Anaconda на ALT Workstation K 10.4
+# Установка Anaconda на `OS: ALT Workstation K 11.1 (Nemorosa)`
 
 ## Шаг 1: Загрузка установочного файла
 Перейдите в нужную директорию (Обычно это домашняя директория /home/yourusername/) и загрузите установочный файл с помощью команды `wget` [Download Anaconda](https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh):
@@ -53,3 +53,31 @@ conda --version
 ```bash
 conda update conda
 ```
+
+## Шаг 9: Отключения/включения автоматического включения среды `conda` (если оно включено)
+
+```bash
+conda config --set auto_activate_base false
+```
+Теперь после открытия нового терминального окно команды `conda` будет доступна, но базовая среда не будет автоматически активироваться.
+
+Что бы активировать среду `Conda`
+
+```bash
+conda activate
+```
+
+Что бы де активировать среду `Conda`
+
+```bash
+conda deactivate
+```
+
+что бы включить автоматическое включения среды `conda`:
+
+```bash
+conda config --set auto_activate_base true
+```
+
+
+
