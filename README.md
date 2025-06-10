@@ -16,6 +16,9 @@
 | 🐍  | [Инструкция по установке Anaconda](./Instruction_install_anaconda.md)                                                               |
 | 🐳  | [Установка и удаление Docker](./Instructions_for_installing_and_removing_Docker.md)                                                 |
 | 🛠️ | [Установка Git](./Instructions_for_installing_git.md)
+| 📌 | [Установка ClickHouse на ALT OS](./Instructions_for_installing_ClickHouse_on_the_ALT_OS.md)                                        |
+| 📌 | [Установка PostgreSQL, pgAdmin 4 и postgresql-contrib](./Installing_PostgreSQL_pgAdmin_4_and_postgresql-contrib.md)                 |
+
 
 ## 📖 О проекте
 
